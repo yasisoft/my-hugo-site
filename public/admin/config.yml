@@ -1,18 +1,21 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: yasisoft/my-hugo-site
   branch: main
+  site_domain: yasisoft.github.io
+  auth_endpoint: https://auth.decapcms.org
+  base_url: https://yasisoft.github.io/my-hugo-site
+  client_id: Ov23lims3dRZp9vJ8Z7U
 
 media_folder: "static/uploads"
-public_folder: "/uploads"
+public_folder: "/my-hugo-site/uploads"
 
 collections:
   - name: "author1"
-    label: "Author 1 Posts"
+    label: "Author 11 Posts"
     folder: "content/author1"
     create: true
     slug: "{{slug}}"
-    editor:
-      preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
@@ -23,8 +26,6 @@ collections:
     folder: "content/author2"
     create: true
     slug: "{{slug}}"
-    editor:
-      preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
