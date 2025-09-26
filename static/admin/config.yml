@@ -1,0 +1,31 @@
+backend:
+  name: github
+  repo: yasisoft/your-repo-name
+  branch: main
+  base_url: https://yasisoft.github.io
+  auth_endpoint: api/auth
+  site_domain: yasisoft.github.io
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "author1"
+    label: "Author 1 Posts"
+    folder: "content/author1"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "author2"
+    label: "Author 2 Posts"
+    folder: "content/author2"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }

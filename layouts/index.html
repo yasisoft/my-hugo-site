@@ -1,0 +1,10 @@
+{{ define "main" }}
+<section>
+  <h1>Welcome to My Hugo Site</h1>
+  <p>Select an author to view their posts:</p>
+  <ul>
+    <li><a href="{{ "/author1/" | relURL }}">Author 1 Posts</a></li>
+    <li><a href="{{ "/author2/" | relURL }}">Author 2 Posts</a></li>
+  </ul>
+</section>
+{{ end }}
