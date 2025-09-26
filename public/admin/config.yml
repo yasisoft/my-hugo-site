@@ -4,7 +4,6 @@ backend:
   branch: main
   site_domain: yasisoft.github.io
   auth_endpoint: https://auth.decapcms.org
-  base_url: /my-hugo-site/
   client_id: Ov23lims3dRZp9vJ8Z7U
 
 media_folder: "static/uploads"
