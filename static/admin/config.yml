@@ -1,13 +1,14 @@
 backend:
   name: github
-  repo: yasisoft/your-repo-name
+  repo: yasisoft/my-hugo-site
   branch: main
-  base_url: https://yasisoft.github.io
-  auth_endpoint: api/auth
   site_domain: yasisoft.github.io
+  auth_endpoint: https://auth.decapcms.org
+  base_url: https://yasisoft.github.io/my-hugo-site
+  client_id: Ov23lims3dRZp9vJ8Z7U
 
 media_folder: "static/uploads"
-public_folder: "/uploads"
+public_folder: "/my-hugo-site/uploads"
 
 collections:
   - name: "author1"
